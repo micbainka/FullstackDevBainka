@@ -1,30 +1,29 @@
-function basicAdd(a,b){
-    return a+b
-}
-const newAdd = (a,b) => a + b 
+//alert("Hello world")
 
-const addAndPrint = (a,b) => {
-    let ret = a + b
-    console.log("add and print ", ret)
-    return ret
-}
+//Numeric
+let length = 180 
+//console.log(length)
+//alert (length) 
+let weigth = 85.5
+//alert(weigth)
 
-window.onload = function (){
-    console.log(basicAdd(2, 2))
-   // console.log("New add:" newAdd( 2, 2))
-    addAndPrint (2,2)
 
-    let array = [1,2,3,4]
-    
-    array.forEach(element => {
-        console.log(element)
-        
-    })
-}
+//Strings
+let color = "Yellow"
+console.log(color)
 
-window.onload = function(){
-    document.getElementById("action button").onclick = function(){
-        alert(document.getElementById("inputbox").value)
-    }
-}
+//Boolean
 
+let x = true
+console.log(x)
+let y = false
+console.log(y)
+console.log (typeof y)
+
+//Object
+const person  = {firstName: "Marek", lastName:"Wisniewksi" }
+console.log(person)
+
+//Array
+const cars = ["Saab","Volvo","BMW"]
+console.log(cars)
