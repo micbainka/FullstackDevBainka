@@ -1,34 +1,30 @@
-function examplefunction(){
-    console.log("Function")
+function basicAdd(a,b){
+    return a+b
 }
-    window.onload = function(){
-        examplefunction()
-    }
+const newAdd = (a,b) => a + b 
 
-    function substractArgs(arg1, arg2){
-        console.log(arg1 - arg2)
-    }
+const addAndPrint = (a,b) => {
+    let ret = a + b
+    console.log("add and print ", ret)
+    return ret
+}
 
-function calculateAge(yearOfBirth){
-    return 2024 - yearOfBirth
-}
-function checkMovie(age,money){
-    if(age>= 18 && money >= 30){
-        return true
-    }else{
-        return false
-    }
-}
-window.onload = function(){
-    examplefunction()
-    substractArgs(2,2)
-    substractArgs(2,3)
-    substractArgs(5,10)
+window.onload = function (){
+    console.log(basicAdd(2, 2))
+   // console.log("New add:" newAdd( 2, 2))
+    addAndPrint (2,2)
+
+    let array = [1,2,3,4]
     
-let myAge = calculateAge(1992)
-console.log("my age is "+ myAge)
-
-console.log(checkMovie(myAge, money))
+    array.forEach(element => {
+        console.log(element)
+        
+    })
 }
 
-function basicAdd(a,b)
+window.onload = function(){
+    document.getElementById("action button").onclick = function(){
+        alert(document.getElementById("inputbox").value)
+    }
+}
+
