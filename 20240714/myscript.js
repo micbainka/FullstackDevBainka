@@ -1,11 +1,3 @@
-/*class AppConfig{
-    firstName = "John"
-    lastName = "Doe"
-    age = 15
-}*/
-/*
-const myInstance = new AppConfig()
-console.log(myInstance)*/
 
 class AppConfig{
     constructor(number = 5, darkMotive = false){
