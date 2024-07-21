@@ -1,21 +1,9 @@
-
-class AppConfig{
-    constructor(number = 5, darkMotive = false){
-    if(AppConfig.exists){
-        return AppConfig.instance 
-    }
-    this.randomNumber = Math.random()
-    this.number = number
-    this.darkMotive = darkMotive
-    AppConfig.exists = true
-    AppConfig.instance = this
-    return this
+class Product {
+    display (){
+        console.log("New Product Created")
     }
 }
 
-const configObject = new AppConfig(2)
-const configObject2 = new AppConfig(1)
 
-console.log(configObject)
-console.log(configObject2)
-console.log(configObject===configObject2)
+const product = new Product()
+product.display()
