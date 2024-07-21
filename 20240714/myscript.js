@@ -1,19 +1,24 @@
-//Promise
-function downloadSomeData (){
-return new Promise((resolve,reject) => {
+//STANDARD
 
-    setTimeout(() => {
-        //resolve("Data downloaded successfully")
-        reject("Error when loading")
-    }, 5000)
-   
-})
+function doThings(){
+    return Promise.resolve("ok")
 }
 
-downloadSomeData()
-.then(result => {
-    console.log("Success")
+doThings()
+.then(res => {
+    console.log(res)
+})
 
+//ASYNC
+
+async function doThingsAsync(){
+    //return "ok"
+    return Promise.reject ("not ok")
+}
+
+doThingsAsync()
+.then (res => {
+    console.log(res)
 })
 .catch(error => {
     console.log(error)
