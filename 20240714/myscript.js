@@ -1,14 +1,20 @@
-function myDisplayer(text){
-    alert(text)
-}
-function myCalculator(num1, num2, myCallback){
-    let sum = num1 + num2
-    myCallback(sum)
-}
+//Promise
+function downloadSomeData (){
+return new Promise((resolve,reject) => {
 
-myCalculator(5,5, myDisplayer)
-
-window.onload = function(){
-    myCalculator(5,5, myDisplayer)
+    setTimeout(() => {
+        //resolve("Data downloaded successfully")
+        reject("Error when loading")
+    }, 5000)
+   
+})
 }
 
+downloadSomeData()
+.then(result => {
+    console.log("Success")
+
+})
+.catch(error => {
+    console.log(error)
+})
