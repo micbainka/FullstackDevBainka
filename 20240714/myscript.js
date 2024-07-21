@@ -1,3 +1,4 @@
+//observer, prototype
 function Click() {
     this.handlers = []
 }
