@@ -1,0 +1,41 @@
+body {
+    background-color: lightpink;
+}
+h1 {color: navy;
+    margin-left: 20px;
+}
+#myParagraph{
+    color:red;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.calculator 
+{
+    fill: lightblue;
+    border-color: whitesmoke;
+ 
+    
+    margin-top: 5px;
+    color: palevioletred;
+}
+
+.buttonNumber 
+{
+    fill: lightblue;
+    border-color: whitesmoke;
+    width: 30px;
+    margin-top: 5px;
+    color: palevioletred;
+}
+
+.buttonFormula 
+{
+    fill: lightblue;
+    border-color: whitesmoke;
+    margin-top: 5px;
+    width: 30px;
+    color: rgb(88, 71, 185);
+}
